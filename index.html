@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudFlow – Clear Version</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f0f2f5;
+    color: #222;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 3px solid #2563eb;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    padding: 10px 24px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-secondary {
+    background: #16a34a;
+    color: white;
+}
+
+/* ===== HERO ===== */
+.hero {
+    margin-top: 80px;
+    padding: 80px 40px;
+    background: #2563eb;
+    color: white;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* ===== HERO MOCKUP ===== */
+.dashboard-mockup {
+    background: #ffffff;
+    color: #111;
+    padding: 20px;
+    border-radius: 12px;
+    border: 4px solid #16a34a;
+}
+
+.mockup-content {
+    height: 220px;
+    background: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/* ===== FEATURES ===== */
+.features {
+    padding: 80px 40px;
+    background: #fef3c7;
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 3px solid #f97316;
+}
+
+.feature-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* ===== STATS ===== */
+.stats {
+    padding: 60px 40px;
+    background: #111827;
+    color: white;
+}
+
+.stats-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 40px;
+    color: #22c55e;
+}
+
+/* ===== CTA ===== */
+.cta {
+    padding: 80px 40px;
+    background: #ecfeff;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: auto;
+    background: #0ea5e9;
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">CloudFlow</div>
+    <ul class="nav-links">
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Docs</a></li>
+    </ul>
+    <div>
+      <button class="btn btn-secondary">Login</button>
+      <button class="btn btn-primary">Sign Up</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+    <div>
+      <h1>Automate Your Workflows</h1>
+      <p>Simple, fast and visual automation platform.</p>
+      <button class="btn btn-secondary">Get Started</button>
+    </div>
+
+    <div class="dashboard-mockup">
+      <div class="mockup-content">📊</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <h3>Fast</h3>
+      <p>Quick workflow automation.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>Secure</h3>
+      <p>Enterprise-level security.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">📈</div>
+      <h3>Scalable</h3>
+      <p>Grow without limits.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-grid">
+    <div><div class="stat-number">10K+</div>Users</div>
+    <div><div class="stat-number">99%</div>Uptime</div>
+    <div><div class="stat-number">120+</div>Countries</div>
+    <div><div class="stat-number">24/7</div>Support</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-container">
+    <h2>Start Automating Today</h2>
+    <p>No credit card required</p>
+    <br>
+    <button class="btn btn-secondary">Create Free Account</button>
+  </div>
+</section>
+
+</body>
+</html>
